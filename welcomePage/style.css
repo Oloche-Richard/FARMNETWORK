@@ -59,15 +59,20 @@ body {
 
 .termImg {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 5rem auto;
+    border: 1px solid #000;
+    width: 70vw;
+    padding: 30px;
 }
 
 .terms {
     font-size: 20px;
+    width: 100%;
 }
 
 .farmGirl {
-    width: 10%;
-    height: 50vh;
+    /* width: 1%;
+    height: 5%; */
 }
