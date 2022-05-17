@@ -68,11 +68,39 @@ body {
 }
 
 .terms {
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
 }
 
 .farmGirl {
     /* width: 1%;
     height: 5%; */
+}
+
+.termImg .terms h2 {
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10PX;
+}
+
+.termImg .terms p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.terms input {
+    margin-top: 2rem;
+}
+
+.terms .btn {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.btn button {
+    padding: 10px 15px;
 }
