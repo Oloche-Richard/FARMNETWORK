@@ -73,7 +73,7 @@ form {
     /* padding-top: 5rem; */
     margin: auto;
     margin-left: 7rem;
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
 
 form label {
@@ -113,7 +113,7 @@ form input {
 
 input[type=button] {
     padding: 10px 50px;
-    margin-top: 20px;
+    /* margin-top: 5px; */
     display: flex;
     background-color: rgba(8, 8, 43, 0.952);
     color: #fff;
@@ -121,4 +121,36 @@ input[type=button] {
     outline: none;
     border: none;
     border-radius: 20px;
+}
+
+.regPage .para {
+    margin-top: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 35%;
+}
+
+.regPage .para p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat' sans-serif;
+    /* animation: wavy 4s ease-in; */
+}
+
+@keyframes wavy {
+    0% {
+        top: 0px;
+        bottom: 0px;
+    }
+    25% {
+        top: 10px;
+        bottom: 0px;
+    }
+    50% {
+        margin-top: 6.5rem;
+    }
+    100% {
+        margin-top: 6.5rem;
+    }
 }
