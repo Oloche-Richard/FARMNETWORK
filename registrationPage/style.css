@@ -113,44 +113,40 @@ form input {
 
 input[type=button] {
     padding: 10px 50px;
-    /* margin-top: 5px; */
-    display: flex;
     background-color: rgba(8, 8, 43, 0.952);
     color: #fff;
     font-size: 15px;
     outline: none;
     border: none;
     border-radius: 20px;
+    margin-top: -15px;
 }
 
-.regPage .para {
-    margin-top: 1rem;
-    position: absolute;
-    text-align: center;
-    top: 70%;
-    left: 35%;
+.wavy {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2))
 }
 
-.regPage .para p {
+.wavy span {
+    position: relative;
+    display: inline-block;
     color: #fff;
     font-size: 20px;
-    font-family: 'Montserrat' sans-serif;
-    /* animation: wavy 4s ease-in; */
+    animation: animate 10s ease-in-out infinite;
+    animation-delay: calc(.1s*var(--i))
 }
 
-@keyframes wavy {
+@keyframes animate {
     0% {
-        top: 0px;
-        bottom: 0px;
+        transform: translateY(0px)
     }
-    25% {
-        top: 10px;
-        bottom: 0px;
+    20% {
+        transform: translateY(-15px)
     }
-    50% {
-        margin-top: 6.5rem;
-    }
+    40%,
     100% {
-        margin-top: 6.5rem;
+        transform: translateY(0px)
     }
 }
