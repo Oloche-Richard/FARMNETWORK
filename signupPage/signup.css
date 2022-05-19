@@ -69,7 +69,7 @@ body {
 }
 
 form {
-    width: 500px;
+    width: 70%;
     /* padding-top: 5rem; */
     margin: auto;
     margin-left: 7rem;
@@ -134,7 +134,7 @@ input[type=button] {
     display: inline-block;
     color: #fff;
     font-size: 20px;
-    animation: animate 10s ease-in-out infinite;
+    animation: animate 20s ease-in-out infinite;
     animation-delay: calc(.1s*var(--i))
 }
 

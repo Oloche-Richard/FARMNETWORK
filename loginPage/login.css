@@ -69,11 +69,8 @@ body {
 }
 
 form {
-    width: 500px;
-    /* padding-top: 5rem; */
-    margin: auto;
-    margin-left: 7rem;
-    padding-top: 3rem;
+    width: 100%;
+    padding: 8rem 8rem;
 }
 
 form label {
@@ -92,4 +89,50 @@ form input {
     outline: none;
     border: none;
     border-bottom: 1px solid #fff;
+}
+
+.regPage .login {
+    position: absolute;
+    top: 55%;
+    left: 43%;
+}
+
+input[type=button] {
+    padding: 10px 50px;
+    background-color: rgba(8, 8, 43, 0.952);
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-top: -15px;
+}
+
+.wavy {
+    position: relative;
+    top: -5%;
+    left: 25%;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2))
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    animation: animate 20s ease-in-out infinite;
+    animation-delay: calc(.1s*var(--i))
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px)
+    }
+    20% {
+        transform: translateY(-15px)
+    }
+    40%,
+    100% {
+        transform: translateY(0px)
+    }
 }
